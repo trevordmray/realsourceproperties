@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealSource Properties</title>
+    
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/trevordmray/realsourceproperties/main/thumbnail.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/trevordmray/realsourceproperties/main/thumbnail.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rsNavy: '#121C4D', // Derived from RGB: 18/28/77
+                        rsGold: '#B57E00', // Deep Gold from Style Guide
+                    },
+                    fontFamily: {
+                        sans: ['Gilroy', 'Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+    <body class="bg-gray-50 min-h-screen md:h-screen overflow-y-auto md:overflow-hidden flex flex-col font-sans text-gray-800 selection:bg-rsGold selection:text-white">
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 md:px-6 py-4 md:py-8">
+        
+        <!-- Logo Section with Ample Whitespace -->
+        <div class="mb-4 md:mb-8 text-center flex-shrink-0">
+            <img 
+                src="https://raw.githubusercontent.com/trevordmray/realsourceproperties/main/realsourcelogo.png" 
+                alt="RealSource Properties Logo" 
+                class="w-auto h-12 md:h-20 mx-auto object-contain"
+            >
+        </div>
+
+        <!-- Announcement Header -->
+        <div class="max-w-3xl text-center mb-6 md:mb-10 flex-shrink-0">
+            <h1 class="text-2xl md:text-4xl font-semibold text-rsNavy mb-3 md:mb-6 tracking-tight">
+                RealSource Properties has evolved.
+            </h1>
+            <p class="text-sm md:text-lg text-gray-600 leading-relaxed font-normal">
+                Following the successful merger of the RealSource REIT, our operations have transitioned into two distinct entities to continue serving our communities and investors.
+            </p>
+        </div>
+
+        <!-- Directional Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full max-w-5xl md:min-h-0">
+            
+            <!-- Cottonwood Residential Card -->
+            <div class="bg-white rounded-2xl p-5 md:p-8 shadow-lg border-t-4 border-rsNavy flex flex-col justify-between h-full transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div class="flex-grow">
+                    <h2 class="text-lg md:text-2xl font-semibold text-rsNavy mb-2 md:mb-4">Cottonwood Residential</h2>
+                    <p class="text-xs md:text-base text-gray-600 mb-4 md:mb-8 leading-relaxed">
+                        Following the RealSource Properties merger with Cottonwood Residential, the RealSource Properties REIT portfolio has merged with Cottonwood Residential. Continue to Cottonwood for support regarding your REIT investment holdings.
+                    </p>
+                </div>
+                <a href="https://www.cottonwoodres.com/" target="_blank" rel="noopener noreferrer" class="inline-block text-center bg-rsNavy text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-200 hover:bg-opacity-90 hover:shadow-md text-sm md:text-base">
+                    Visit Cottonwood Residential
+                </a>
+            </div>
+
+            <!-- RealSource Residential Card -->
+            <div class="bg-white rounded-2xl p-5 md:p-8 shadow-lg border-t-4 border-rsGold flex flex-col justify-between h-full transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                <div class="flex-grow">
+                    <h2 class="text-lg md:text-2xl font-semibold text-rsNavy mb-2 md:mb-4">RealSource Residential</h2>
+                    <p class="text-xs md:text-base text-gray-600 mb-4 md:mb-8 leading-relaxed">
+                        Our dedicated asset management and investment team continues as RealSource Residential. Visit us here for ongoing asset management for Non-REIT investment holdings and real estate investment services.
+                    </p>
+                </div>
+                <a href="https://realsourceresidential.com/" target="_blank" rel="noopener noreferrer" class="inline-block text-center bg-rsGold text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-200 hover:bg-opacity-90 hover:shadow-md text-sm md:text-base">
+                    Visit RealSource Residential
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-3 md:py-6 text-center border-t border-gray-200 bg-white flex-shrink-0">
+        <p class="text-gray-500 text-xs md:text-sm mb-1 md:mb-2">
+            For more information, please contact us at 
+            <a href="mailto:info@realsource.net" class="text-rsGold font-semibold hover:underline">info@realsource.net</a>
+        </p>
+        <p class="text-gray-400 text-xs md:text-sm">
+            &copy; <script>document.write(new Date().getFullYear())</script> RealSource Properties. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
